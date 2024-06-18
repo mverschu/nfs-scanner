@@ -67,8 +67,51 @@ To use the remembered NFS shares without scanning again:
 sudo python3 nfs-scanner.py --list --remember
 ```
 
+### Running in a Python 3 Virtual Environment
+
+To ensure that you have a clean and isolated environment for running the NFS Scanner and Mounter script, it's a good idea to use a Python virtual environment. Here's how to set it up:
+
+1. **Install `virtualenv`** (if you don't have it already):
+    ```sh
+    pip install virtualenv
+    ```
+
+2. **Create a virtual environment**:
+    ```sh
+    virtualenv venv
+    ```
+
+3. **Activate the virtual environment**:
+    - On Windows:
+      ```sh
+      venv\Scripts\activate
+      ```
+    - On macOS and Linux:
+      ```sh
+      source venv/bin/activate
+      ```
+
+4. **Install the required Python packages**:
+    ```sh
+    pip install -r requirements.txt
+    ```
+
+5. **Run the script**:
+    - To scan a range of IPs and list all available shares:
+      ```sh
+      sudo python3 nfs-scanner.py --range 192.168.1.0/24 --list
+      ```
+    - To scan a range of IPs, mount available shares, and show their contents:
+      ```sh
+      sudo python3 nfs-scanner.py --range 192.168.1.0/24 --mount
+      ```
+
+6. **Deactivate the virtual environment** when you're done:
+    ```sh
+    deactivate
+    ```
+
+By following these steps, you'll ensure that your system's Python environment remains clean and that the NFS Scanner and Mounter script runs with the required dependencies.
+
 ### Clean-up
 The script will automatically unmount and clean up directories created during the operation.
-
-## License
-This project is licensed under the MIT License.
