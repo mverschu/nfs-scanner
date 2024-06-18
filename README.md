@@ -73,7 +73,7 @@ To ensure that you have a clean and isolated environment for running the NFS Sca
 
 1. **Install `virtualenv`** (if you don't have it already):
     ```sh
-    pip install virtualenv
+    pip3 install virtualenv
     ```
 
 2. **Create a virtual environment**:
@@ -93,18 +93,10 @@ To ensure that you have a clean and isolated environment for running the NFS Sca
 
 4. **Install the required Python packages**:
     ```sh
-    pip install -r requirements.txt
+    pip3 install -r requirements.txt
     ```
 
 5. **Run the script**:
-    - To scan a range of IPs and list all available shares:
-      ```sh
-      sudo python3 nfs-scanner.py --range 192.168.1.0/24 --list
-      ```
-    - To scan a range of IPs, mount available shares, and show their contents:
-      ```sh
-      sudo python3 nfs-scanner.py --range 192.168.1.0/24 --mount
-      ```
 
 6. **Deactivate the virtual environment** when you're done:
     ```sh
