@@ -1,6 +1,11 @@
 
 # NFS Scanner and Mounter
 
+## Screenshots
+
+Scanning phase:
+![image](https://github.com/mverschu/nfs-scanner/assets/69352107/162fb707-85dc-44e4-963a-6d8f5d24b521)
+
 ## Overview
 NFS Scanner and Mounter is a Python tool designed to scan, list, and mount NFS shares on a given network range or a single IP address. It leverages `nmap` for scanning and `showmount` for listing available NFS shares. The tool supports multi-threaded scanning and offers options to remember scanned NFS shares, allowing for efficient and repeated use.
 
