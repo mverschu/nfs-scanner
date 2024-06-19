@@ -23,7 +23,7 @@ NFS Scanner and Mounter is a Python tool designed to scan, list, and mount NFS s
 - `showmount` command available (typically part of the `nfs-common` package on Linux)
 - Install required Python packages using:
   ```sh
-  pip install tqdm termcolor pandas
+  pip install tqdm termcolor pandas python-nmap
   ```
 
 ## Usage
